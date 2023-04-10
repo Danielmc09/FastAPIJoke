@@ -1,0 +1,39 @@
+
+-----------------------setencia para base de datos Sql------------------------
+
+CREATE TABLE jokes (
+    id SERIAL PRIMARY KEY,
+    joke TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+-----------------------setencia para base de datos NoSql------------------------
+
+
+db.createCollection("jokes", {
+   validator: { $jsonSchema: {
+      bsonType: "object",
+      required: [ "id", "joke", "created_at", "updated_at" ],
+      properties: {
+         id: {
+            bsonType: "string",
+            description: "must be a string and is required"
+         },
+         joke: {
+            bsonType: "string",
+            description: "must be a string and is required"
+         },
+         created_at: {
+            bsonType: "date",
+            description: "must be a date and is required"
+         },
+         updated_at: {
+            bsonType: "date",
+            description: "must be a date and is required"
+         }
+      }
+   }}
+})

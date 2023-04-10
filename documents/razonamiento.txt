@@ -1,0 +1,20 @@
+En mi experiencia, al momento de elegir una base de datos, es importante considerar varios 
+factores, como la escalabilidad, el rendimiento, la consistencia y la disponibilidad de los 
+datos. En mi caso, al analizar estos aspectos, encontré que PostgreSQL es una mejor opción 
+para la aplicación que estamos desarrollando.
+
+Una de las principales razones por las que elegí PostgreSQL sobre MongoDB es porque 
+nuestra aplicación podría tener una alta carga de solicitudes, y PostgreSQL tiene una mayor 
+capacidad de escalabilidad en comparación con MongoDB. Además, en situaciones de alta 
+concurrencia, PostgreSQL ofrece un mejor rendimiento, lo que significa que podemos 
+manejar una mayor cantidad de solicitudes en menos tiempo.
+
+Otro factor que influyó en mi decisión fue la consistencia de los datos. PostgreSQL es una 
+base de datos relacional que ofrece una mayor consistencia de datos en comparación con 
+MongoDB, que es una base de datos NoSQL. Esto es especialmente importante en nuestra 
+aplicación, donde la integridad de los datos es fundamental.
+
+En resumen, aunque MongoDB es una buena opción para aplicaciones que requieren una 
+gran flexibilidad en el manejo de los datos, en nuestro caso, elegí PostgreSQL debido a su 
+capacidad de escalabilidad, mejor rendimiento y consistencia de datos, lo que garantiza la 
+disponibilidad y la integridad de los datos para nuestros usuarios.
